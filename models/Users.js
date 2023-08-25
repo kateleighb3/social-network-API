@@ -18,13 +18,13 @@ const usersSchema = new Schema(
         },
         thoughts: [{
           type: Schema.Types.ObjectId,
-          ref: 'Thoughts'
+          ref: 'thoughts'
         }],
 
         friends: [{
           // Array of _id values referencing the Users model (self-reference)
           type: Schema.Types.ObjectId,
-          ref: 'Users'
+          ref: 'users'
         }],
         // assignments: [assignmentSchema],
       },
